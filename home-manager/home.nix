@@ -88,18 +88,6 @@
   programs.home-manager.enable = true;
   programs.git.enable = true;
  
-
-  config.theme.wallpaper = "/home/player1/Pictures/Wallpapers";
-
-  services.hyprpaper = {
-   enable = true;
-
-    settings = {
-      preload = ["${config.theme.wallpaper}"];
-      wallpaper = [", ${config.theme.wallpaper}"];
-    };
-  };
-  
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
