@@ -87,15 +87,20 @@
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;
-  
-  services.hyprpaper = {
-    enable = true;
-    settings = {
-      preload = [ "/Pictures/Wallpapers/Shogoki.png" ];
-      wallpaper = [ ", /Pictures/Wallpapers/Shogoki.png" ];
-   };
-  };
+ 
 
+  config.theme.wallpaper = "/home/player1/Pictures/Wallpapers";
+
+  services.hyprpaper = {
+   enable = true;
+   package = inputs.hyprpaper.packages.${pkgs.system}.default;
+
+    settings = {
+      preload = ["${config.theme.wallpaper}"];
+      wallpaper = [", ${config.theme.wallpaper}"];
+    };
+  };
+  
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
