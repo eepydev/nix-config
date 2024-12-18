@@ -91,8 +91,8 @@
   services.hyprpaper = {
     enable = true;
     settings = {
-      preload = [ "/Pictures/Wallpapers/Shogoki.png" ],
-      wallpaper = [ "/Pictures/Wallpapers/Shogoki.png" ],
+      preload = [ "/Pictures/Wallpapers/Shogoki.png" ];
+      wallpaper = [ ", /Pictures/Wallpapers/Shogoki.png" ];
    };
   };
 
