@@ -13,8 +13,10 @@
     # inputs.nix-colors.homeManagerModule
 
     # You can also split up your configuration and import pieces of it here:
-     ./programs/hyprland.nix
+    ./programs/hyprland.nix
     ./programs/foot.nix
+    ./programs/waybar.nix
+
   ];
 
   nixpkgs = {

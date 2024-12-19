@@ -32,7 +32,7 @@
   
 
     exec-once = [
-      "hyprpaper"
+      "waybar"
     ];
 
   decoration = {
