@@ -86,6 +86,18 @@
 
   };
 
+  services.hyprpaper = {
+     enable = true;
+     settings = {
+       preload = [
+         "~/Pictures/Wallpapers/Shogoki.png"
+       ];
+       wallpaper = [
+         "eDP-1,~/Pictures/Wallpapers/Shogoki.png"
+       ];
+     };
+   };
+
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;

@@ -33,6 +33,7 @@
 
     exec-once = [
       "waybar"
+      "hyprpaper"
     ];
 
   decoration = {
