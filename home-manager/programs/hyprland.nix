@@ -34,6 +34,7 @@
     exec-once = [
       "waybar"
       "hyprpaper"
+      "dunst"
     ];
 
   decoration = {
