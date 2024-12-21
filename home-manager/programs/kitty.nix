@@ -2,7 +2,7 @@
   programs.kitty = {
     enable = true;
     font = {
-      size = 5;
+      size = 8;
       name = "JetBrains Mono";
     };
 
