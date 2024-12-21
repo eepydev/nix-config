@@ -35,6 +35,7 @@
       "waybar"
       "hyprpaper"
       "dunst"
+      "hypridle"
     ];
 
   decoration = {

@@ -16,7 +16,9 @@
     ./programs/hyprland.nix
     ./programs/foot.nix
     ./programs/dunst.nix
-
+    ./programs/starship.nix
+    ./programs/hypridle.nix
+    ./programs/hyprlock.nix
   ];
 
   nixpkgs = {
@@ -98,13 +100,16 @@
      };
    };
 
-  
+
+
+  # Enable waybar
   programs.waybar.enable = true;
 
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;
- 
+
+
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
 
