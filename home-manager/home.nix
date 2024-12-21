@@ -15,6 +15,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./programs/hyprland.nix
     ./programs/foot.nix
+    ./programs/kitty.nix
     ./programs/dunst.nix
     ./programs/starship.nix
     ./programs/hypridle.nix
@@ -68,6 +69,7 @@
     imv
     mpv
     gh
+    libsixel
   ];
 
 
@@ -79,6 +81,7 @@
 
     shellAliases = {
         update = "home-manager switch -f ~/.Dotfiles/nix-config/home-manager/home.nix";
+        switch = "sudo nixos-rebuild switch --flake .Dotfiles/nix-config/#goblin"
         eza = "eza -l";
     };
     history = {

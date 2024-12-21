@@ -7,6 +7,8 @@
       "$mod, Return, exec, foot"
       "$mod, q, killactive"
       "$mod, e, exit"
+      "$mod, f, fullscreen,"
+
 
       "$mod, d, exec, rofi -show drun"
       "$mod, left, movefocus, l"
@@ -28,6 +30,14 @@
       ",XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+"
       ",XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-"
       ",XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+    ];
+
+
+    # mouse movements 
+    bindm = [
+      "$mod, mouse:272, movewindow"
+      "$mod, mouse:273, resizewindow"
+      "$mod ALT, mouse:272, resizewindow"
     ];
   
 
