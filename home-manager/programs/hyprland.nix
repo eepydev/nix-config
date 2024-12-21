@@ -8,6 +8,7 @@
       "$mod, q, killactive"
       "$mod, e, exit"
       "$mod, f, fullscreen,"
+      "$mod, t, togglefloating,"
 
 
       "$mod, d, exec, rofi -show drun"
