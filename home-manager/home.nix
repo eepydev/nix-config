@@ -81,7 +81,7 @@
 
     shellAliases = {
         update = "home-manager switch -f ~/.Dotfiles/nix-config/home-manager/home.nix";
-        switch = "sudo nixos-rebuild switch --flake .Dotfiles/nix-config/#goblin"
+        switch = "sudo nixos-rebuild switch --flake .Dotfiles/nix-config/#goblin";
         eza = "eza -l";
     };
     history = {
