@@ -72,7 +72,6 @@
     libsixel
     swww
     gifsicle
-    mullvad
     mullvad-vpn
     discord
     element-desktop
