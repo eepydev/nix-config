@@ -47,6 +47,7 @@
       "hyprpaper"
       "dunst"
       "hypridle"
+      "swww-daemon"
     ];
 
   decoration = {

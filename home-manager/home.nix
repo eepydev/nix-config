@@ -70,6 +70,14 @@
     mpv
     gh
     libsixel
+    swww
+    gifsicle
+    mullvad
+    mullvad-vpn
+    discord
+    element-desktop
+    weechat
+    tmux
   ];
 
 
@@ -91,19 +99,28 @@
 
   };
 
-  services.hyprpaper = {
-     enable = true;
-     settings = {
-       preload = [
-         "~/Pictures/Wallpapers/Shogoki.png"
-       ];
-       wallpaper = [
-         "eDP-1,~/Pictures/Wallpapers/Shogoki.png"
-       ];
-     };
-   };
+#  services.hyprpaper = {
+#     enable = true;
+#     settings = {
+#       preload = [
+#         "~/Pictures/Wallpapers/Shogoki.png"
+#      ];
+#       wallpaper = [
+#         "eDP-1,~/Pictures/Wallpapers/Shogoki.png"
+#       ];
+#     };
+#   };
 
 
+  # Zathura
+  programs.zathura = {
+    enable = true;
+    options = {
+      incremental-search = "true";
+      default-bg = "1e1e2e";
+      default-fg = "cdd6f4";
+    };
+  };
 
   # Enable waybar
   programs.waybar.enable = true;
@@ -111,7 +128,6 @@
   # Enable home-manager and git
   programs.home-manager.enable = true;
   programs.git.enable = true;
-
 
   # Nicely reload system units when changing configs
   systemd.user.startServices = "sd-switch";
