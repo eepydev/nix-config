@@ -77,6 +77,8 @@
     element-desktop
     weechat
     tmux
+    brave
+    eww
   ];
 
 
