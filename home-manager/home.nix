@@ -77,8 +77,11 @@
     weechat
     tmux
     brave
-    eww
     hyprpolkitagent
+    udiskie
+    grim
+    slurp
+    ags
   ];
 
 
