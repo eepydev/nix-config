@@ -48,6 +48,7 @@
       "dunst"
       "hypridle"
       "swww-daemon"
+      "systemctl --user start hyprpolkitagent"
     ];
 
   decoration = {

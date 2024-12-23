@@ -79,6 +79,7 @@
     tmux
     brave
     eww
+    hyprpolkitagent
   ];
 
 

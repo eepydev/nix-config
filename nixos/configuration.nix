@@ -46,6 +46,9 @@
   # Enable flakes
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
+  # Enable mullvad
+  services.mullvad-vpn.enable = true;
+
   # Enable zsh
   programs.zsh.enable = true;
   users.users.player1.shell = pkgs.zsh;
