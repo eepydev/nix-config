@@ -81,7 +81,8 @@
     udiskie
     grim
     slurp
-    ags
+    lua
+    eww
   ];
 
 
