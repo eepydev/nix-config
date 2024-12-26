@@ -82,7 +82,6 @@
     grim
     slurp
     lua
-    eww
   ];
 
 
