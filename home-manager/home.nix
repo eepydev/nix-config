@@ -20,6 +20,7 @@
     ./programs/starship.nix
     ./programs/hypridle.nix
     ./programs/hyprlock.nix
+    ./programs/yazi.nix
   ];
 
   nixpkgs = {
@@ -64,7 +65,6 @@
     joshuto
     rofi
     wl-clipboard
-    bottom
     obsidian
     imv
     mpv
@@ -82,6 +82,9 @@
     grim
     slurp
     lua
+    keepassxc
+    btop
+    qbittorrent
   ];
 
 
@@ -123,6 +126,15 @@
       incremental-search = "true";
       default-bg = "1e1e2e";
       default-fg = "cdd6f4";
+      window-height = "800";
+      window-width = "600";
+      adjust-open = "width";
+      smooth-scroll = "true";
+      statusbar-home-tilde = "true";
+      statusbar-h-padding = "50";
+      statusbar-v-padding = "50";
+      guioptions = "s";
+      font = "Input      9";
     };
   };
 
