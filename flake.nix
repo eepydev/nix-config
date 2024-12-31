@@ -4,6 +4,9 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
+    
+		yazi.url = "github:sxyazi/yazi";
+    ghostty.url = "github:ghostty-org/ghostty";
 
     # Home manager
     home-manager.url = "github:nix-community/home-manager/release-24.11";
@@ -14,6 +17,8 @@
     self,
     nixpkgs,
     home-manager,
+    ghostty,
+    yazi,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -26,7 +31,14 @@
 	system = "x86_64-linux";
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
-        modules = [./nixos/configuration.nix];
+        modules = [./nixos/configuration.nix
+         {
+          environment.systemPackages = [
+            ghostty.packages.x86_64-linux.default
+            yazi.packages.x86_64-linux.default
+           ];
+         }
+        ];
       };
     };
 

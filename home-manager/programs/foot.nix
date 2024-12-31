@@ -87,7 +87,7 @@ in {
 
       colors =
         {
-          alpha = 0.25;
+          alpha = 1.0;
         }
         // colors.dark;
     };

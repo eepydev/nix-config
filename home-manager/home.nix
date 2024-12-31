@@ -20,7 +20,6 @@
     ./programs/starship.nix
     ./programs/hypridle.nix
     ./programs/hyprlock.nix
-    ./programs/yazi.nix
   ];
 
   nixpkgs = {
@@ -76,7 +75,6 @@
     element-desktop
     weechat
     tmux
-    brave
     hyprpolkitagent
     udiskie
     grim
