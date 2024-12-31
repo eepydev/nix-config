@@ -15,7 +15,6 @@
     # You can also split up your configuration and import pieces of it here:
     ./programs/hyprland.nix
     ./programs/foot.nix
-    ./programs/kitty.nix
     ./programs/dunst.nix
     ./programs/starship.nix
     ./programs/hypridle.nix
@@ -58,10 +57,8 @@
     zig
     eza
     tree
-    joshuto
     neofetch
     nitch
-    joshuto
     rofi
     wl-clipboard
     obsidian
@@ -70,7 +67,6 @@
     gh
     libsixel
     swww
-    gifsicle
     discord
     element-desktop
     weechat

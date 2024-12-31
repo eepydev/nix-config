@@ -4,7 +4,7 @@
   settings = {
     "$mod" = "SUPER";
     bind = [
-      "$mod, Return, exec, foot"
+      "$mod, Return, exec, ghostty"
       "$mod, q, killactive"
       "$mod, e, exit"
       "$mod, f, fullscreen,"
