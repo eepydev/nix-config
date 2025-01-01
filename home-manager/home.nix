@@ -15,7 +15,7 @@
     # You can also split up your configuration and import pieces of it here:
     ./programs/hyprland.nix
     ./programs/foot.nix
-    ./programs/dunst.nix
+    #    ./programs/dunst.nix
     ./programs/starship.nix
     ./programs/hypridle.nix
     ./programs/hyprlock.nix
@@ -57,8 +57,6 @@
     zig
     eza
     tree
-    neofetch
-    nitch
     rofi
     wl-clipboard
     obsidian
@@ -79,6 +77,7 @@
     keepassxc
     btop
     qbittorrent
+    fastfetch
   ];
 
 

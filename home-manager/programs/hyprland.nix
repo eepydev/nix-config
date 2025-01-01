@@ -54,7 +54,7 @@
     exec-once = [
       "waybar"
       "hyprpaper"
-      "dunst"
+        #      "dunst"
       "hypridle"
       "swww-daemon"
       "systemctl --user start hyprpolkitagent"
