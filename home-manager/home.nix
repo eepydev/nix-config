@@ -81,11 +81,12 @@
     cava
     cmus
     gnupg
-    tor-browser
     zoxide
     cbonsai
     cmatrix
     pipes
+    libreoffice
+    chromium
   ];
 
 
