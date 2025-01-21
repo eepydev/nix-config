@@ -87,6 +87,7 @@
     pipes
     libreoffice
     chromium
+    crawlTiles
   ];
 
 
