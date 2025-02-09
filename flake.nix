@@ -4,7 +4,11 @@
   inputs = {
     # Nixpkgs
     nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
-    
+
+
+    hyprpanel.url = "github:jas-singhfsu/hyprpanel";
+    hyprpanel.inputs.nixpkgs.follows = "nixpkgs";
+
 		yazi.url = "github:sxyazi/yazi";
     ghostty.url = "github:ghostty-org/ghostty";
 
@@ -19,6 +23,7 @@
     home-manager,
     ghostty,
     yazi,
+    hyprpanel,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -32,10 +37,13 @@
         specialArgs = {inherit inputs outputs;};
         # > Our main nixos configuration file <
         modules = [./nixos/configuration.nix
+          {nixpkgs.overlays = [inputs.hyprpanel.overlay];}
           {
           environment.systemPackages = [
             ghostty.packages.x86_64-linux.default
             yazi.packages.x86_64-linux.default
+            hyprpanel.packages.x86_64-linux.default
+
            ];
           }
         ];

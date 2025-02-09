@@ -52,11 +52,9 @@
     ];
 
     exec-once = [
-      "waybar"
+      "hyprpanel"
       "hyprpaper"
-      "dunst"
       "hypridle"
-      "swww-daemon"
       "systemctl --user start hyprpolkitagent"
       "udiskie"
     ];

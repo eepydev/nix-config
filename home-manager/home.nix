@@ -11,14 +11,14 @@
   imports = [
     # If you want to use home-manager modules from other flakes (such as nix-colors):
     # inputs.nix-colors.homeManagerModule
-
     # You can also split up your configuration and import pieces of it here:
     ./programs/hyprland.nix
     ./programs/foot.nix
-    ./programs/dunst.nix
+    #    ./programs/dunst.nix
     ./programs/starship.nix
     ./programs/hypridle.nix
     ./programs/hyprlock.nix
+
   ];
 
   nixpkgs = {
@@ -84,10 +84,14 @@
     zoxide
     cbonsai
     cmatrix
-    pipes
     libreoffice
     chromium
     crawlTiles
+    appimage-run
+    love
+    tiled
+    libresprite
+    crawl
   ];
 
 
