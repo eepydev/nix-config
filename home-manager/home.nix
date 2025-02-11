@@ -57,7 +57,6 @@
     zig
     eza
     tree
-    rofi
     wl-clipboard
     obsidian
     imv
@@ -92,6 +91,8 @@
     tiled
     libresprite
     crawl
+    rofi
+    steam-run
   ];
 
 
