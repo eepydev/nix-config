@@ -93,6 +93,7 @@
     crawl
     rofi
     steam-run
+    spotify
   ];
 
 
