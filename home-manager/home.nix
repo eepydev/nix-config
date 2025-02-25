@@ -94,6 +94,7 @@
     rofi
     steam-run
     spotify
+    openmw
   ];
 
 
